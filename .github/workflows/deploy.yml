@@ -7,7 +7,7 @@ on:
    branches:
      - master
  workflow_dispatch:
- 
+
 #実行される処理
 jobs:
  build:
@@ -21,5 +21,5 @@ jobs:
          # SSH接続して、git pullする
          echo "${{ secrets.PRIVATE_KEY }}" > private_key
          chmod 600 private_key
-         ssh -oStrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd ~/portfolio && git fetch origin && git pull origin master"
-         
+         ssh -oStrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd /var/www/portfolio && git fetch origin && git pull origin master"
+
