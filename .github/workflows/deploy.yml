@@ -1,7 +1,7 @@
-# Workflowの名前。任意に設定可能
+# Workflowの名前
 name: EC2 auto deploy
 
-# アクションが実行されるタイミングを設定。今回はmainブランチにpushされた時。
+# masterにpushされた時にデプロイする
 on:
  push:
    branches:
@@ -21,8 +21,6 @@ jobs:
          # SSH接続して、git pullする
          echo "${{ secrets.PRIVATE_KEY }}" > private_key
          chmod 600 private_key
-         ssh -oStrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd /var/www/portfolio && git fetch origin && git pull origin master"
+         ssh -oStrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd /var/www/portfolio && git fetch origin && git pull origin master && npm run build"
 
-         # ビルドする
-         npm run build
 
