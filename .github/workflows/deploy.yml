@@ -23,3 +23,6 @@ jobs:
          chmod 600 private_key
          ssh -oStrictHostKeyChecking=no ${{ secrets.USER_NAME }}@${{ secrets.HOST_NAME }} -i private_key "cd /var/www/portfolio && git fetch origin && git pull origin master"
 
+         # ビルドする
+         npm run build
+
