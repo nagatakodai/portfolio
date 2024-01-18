@@ -1,5 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import Button from '@mui/material/Button';
 
 // index.blade.phpのid="app"を読み込む
 const container = document.getElementById('app');
@@ -7,6 +8,8 @@ const root = createRoot(container!);
 
 root.render(
     <div className="text-medium-bold">
+        <Button onClick={() => alert('Hello, World!')}>Click me!</Button><br></br><br></br>
+
         GitHub:<a href="https://github.com/nagatakodai/portfolio">https://github.com/nagatakodai/portfolio</a><br></br>
         <br></br>このプロジェクトで使用している開発環境<br></br>
         <br></br>バックエンド<br></br>
