@@ -16,7 +16,7 @@
     @vite([
     'resources/css/app.css',
     'resources/scss/app.scss',
-    'resources/ts/index.tsx',
+    'resources/ts/pages/index.tsx',
     ])
 
 </head>
