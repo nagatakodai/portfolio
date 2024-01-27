@@ -8,7 +8,11 @@ const App = () => {
     return (
         <Router>
             <div>
-                <AppRoutes />
+                <br></br>
+                // ここからページごとにレンダリング
+                <AppRoutes/>
+                <br></br>
+                // ここまでページごとにレンダリング
             </div>
         </Router>
     );
