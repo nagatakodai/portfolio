@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <h1>Home Page</h1>
-            <p>これがSPAですか</p>
+            <p>SPAになってなさそう</p>
         </div>
     );
 };
