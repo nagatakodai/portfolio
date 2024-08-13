@@ -6,9 +6,7 @@ const Index = () => {
     return (
         <div className="text-medium-bold">
             <h1>Index Page</h1>
-            <Button onClick={() => alert('マテリアルUIのボタンだよ')}>Click me!</Button><br/><br/>
-            GitHub:<a
-            href="https://github.com/nagatakodai/portfolio">https://github.com/nagatakodai/portfolio</a><br/><br/>
+            GitHub:<a href="https://github.com/nagatakodai/portfolio">https://github.com/nagatakodai/portfolio</a><br/><br/>
             このプロジェクトで使用している開発環境<br/><br/>
             バックエンド<br/>
             ・PHP 8.x(Laravel 10.x)<br/>
@@ -20,10 +18,6 @@ const Index = () => {
             ・GitHub Actions<br/><br/>
             サーバー<br/>
             ・AWS EC2<br/><br/>
-            DB<br/>
-            ・AWS RDS
-
-
         </div>
     );
 }
