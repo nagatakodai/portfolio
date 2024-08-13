@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 const Index = () => {
     return (
         <div className="text-medium-bold">
-            <h1>Index Page</h1>
             GitHub:<a href="https://github.com/nagatakodai/portfolio">https://github.com/nagatakodai/portfolio</a><br/><br/>
             このプロジェクトで使用している開発環境<br/><br/>
             バックエンド<br/>

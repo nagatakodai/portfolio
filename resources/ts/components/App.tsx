@@ -9,10 +9,8 @@ const App = () => {
         <Router>
             <div>
                 <br></br>
-                // ここからページごとにレンダリング
                 <AppRoutes/>
                 <br></br>
-                // ここまでページごとにレンダリング
             </div>
         </Router>
     );
